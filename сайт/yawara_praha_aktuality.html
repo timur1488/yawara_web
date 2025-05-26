@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YAWARA PRAHA AKTUALITY</title>
+  <link rel="stylesheet" href="yawara_web.css" />
+</head>
+
+<body>
+
+  <div id="preloader">
+  <img src="yawara_prague_logo.png" alt="YAWARA Logo">
+  </div>
+
+  <!-- Hlavička -->
+  <header class="main-header">
+    <h1><a href="yawara_praha_aktuality.html">YAWARA JUDO PRAHA</a></h1>
+  </header>
+
+  <!-- Navigační menu -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="yawara_praha_aktuality.html">AKTUALITY</a></li>
+      <li class="divider"></li>
+      <li><a href="yawara_prague_trener_tym.html">TRENÉRSKÝ TÝM</a></li>
+      <li class="divider"></li>
+      <li><a href="yawara_praha_galerie.html">GALERIE</a></li>
+      <li class="divider"></li>
+      <li><a href="yawara_bohemia_aktuality.html">YAWARA BOHEMIA</a></li>
+    </ul>
+
+    <div class="social-icon">
+      <a href="https://www.tiktok.com/@yawara_judo" target="_blank">
+        <img src="tik tok.png" alt="TikTok" />
+      </a>
+      <a href="https://www.instagram.com/yawarajudoclub" target="_blank">
+        <img src="instagram.png" alt="Instagram" />
+      </a>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <section class="slider-section">
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <div class="slide active">
+          <img src="img1.jpg" alt="Foto 1" onclick="openModal(this.src)">
+        </div>
+        <div class="slide">
+          <img src="img2.jpg" alt="Foto 2" onclick="openModal(this.src)">
+        </div>
+        <div class="slide">
+          <img src="img3.jpg" alt="Foto 3" onclick="openModal(this.src)">
+        </div>
+        <div class="slide">
+          <img src="img4.jpg" alt="Foto 4" onclick="openModal(this.src)">
+        </div>
+        <div class="slide">
+          <img src="img5.jpg" alt="Foto 5" onclick="openModal(this.src)">
+        </div>
+        <div class="slide">
+          <img src="img6.jpg" alt="Foto 5" onclick="openModal(this.src)">
+        </div>
+      </div>
+      <div class="slider-buttons">
+        <button onclick="prevSlide()">&#10094;</button>
+        <button onclick="nextSlide()">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- O klubu -->
+  <section class="about-section">
+    <div class="about-content">
+      <h2>O KLUBU</h2>
+      <p>
+        Klub se specializuje na závodní judo. Naši svěřenci vyhrávají nejen republikové, ale i mezinárodní soutěže.
+        Sportovci se pravidelně účastní turnajů a kempů v Polsku, Německu, Rakousku, na Slovensku a v dalších zemích.
+        Tréninky vedou trenéři vysoké úrovně s bohatou trenérskou praxí.
+      </p>
+      <p>
+        V klubu trénují děti jak z Prahy, tak i ze Středočeského kraje. Skupiny jsou rozděleny podle věku:
+        starší sportovní skupina (dorost a junioři), střední sportovní skupina (mladší a starší žáci),
+        mladší sportovní skupina (přípravka). Máme také skupiny baby judo pro děti ve věku 4–6 let a
+        skupiny všeobecné tělesné přípravy pro rodiče s dětmi ve věku 2–4 let.
+      </p>
+      <p>
+        U dětí a mládeže rozvíjíme nejen fyzické, technické a taktické dovednosti, ale také je učíme
+        lidským hodnotám, jako jsou cílevědomost, pracovitost, disciplína, sebeovládání, respekt a
+        vzájemná pomoc.
+      </p>
+      <p>
+        Pro děti organizujeme letní tábory, lyžování a další zajímavé akce. Naším hlavním cílem je, aby
+        cvičení v našem klubu pomáhalo dětem v životě - i když se z nich nestanou šampioni, vyrostou z nich
+        zdraví a silní lidé.
+      </p>
+    </div>
+  </section>
+
+  <!-- Modal for enlarged images -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-image" />
+    <div class="modal-navigation">
+      <button class="modal-prev" onclick="prevModalImage()">&#10094;</button>
+      <button class="modal-next" onclick="nextModalImage()">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Kalendář Google -->
+  <section class="calendar-section">
+    <h2 class="calendar-title">Kalendář</h2>
+    <iframe
+      src="https://calendar.google.com/calendar/embed?src=timurandrushko123%40gmail.com&ctz=Europe%2FPrague"
+      style="border: 0"
+      width="800"
+      height="600"
+      frameborder="0"
+      scrolling="no">
+    </iframe>
+  </section>
+
+  <!-- Kontakty -->
+  <footer class="contact-section">
+  <h2>Kontakty</h2>
+
+  <div class="contact-content">
+    <div class="contact-item label-group">
+      <p class="label">Adresa:</p>
+      <div class="label-details">
+        <div>
+          <p>Sluneční náměstí 11, Praha 13 - Stodůlky</p>
+          <a href="https://www.google.com/maps/search/Sluneční+náměstí+11,+Praha" target="_blank">Zobrazit na Google Maps</a>
+        </div>
+        <div>
+          <p>ZŠ Kořenského, Praha 5 - Smíchov</p>
+          <a href="https://www.google.com/maps/search/ZŠ+Kořenského,+Praha" target="_blank">Zobrazit na Google Maps</a>
+        </div>
+        <div>
+          <p>Tělocvična v SK Viktorie Ořech, Zbuzanská 180, 252 25 Ořech</p>
+          <a href="https://www.google.com/maps/search/Zbuzanská+180,+252+25+Ořech" target="_blank">Zobrazit na Google Maps</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-item label-group">
+      <p class="label">Telefon:</p>
+      <div class="label-details">
+        <p>+420 608 443 806</p>
+      </div>
+    </div>
+
+    <div class="contact-item label-group">
+      <p class="label">Email:</p>
+      <div class="label-details">
+        <p><a href="mailto:gracovajudo@seznam.cz">gracovajudo@seznam.cz</a></p>
+      </div>
+    </div>
+
+    <div class="contact-item label-group">
+      <p class="label">Číslo účtu:</p>
+      <div class="label-details">
+        <p>2900708978 / 2010</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-image");
+
+    const slideImages = Array.from(document.querySelectorAll('.slide img'));
+    let currentModalIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      slideIndex = (slideIndex + 1) % slides.length;
+      showSlide(slideIndex);
+    }
+
+    function prevSlide() {
+      slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+      showSlide(slideIndex);
+    }
+
+    setInterval(nextSlide, 5000);
+
+    function openModal(src) {
+      modal.style.display = "flex";
+      modalImg.src = src;
+      currentModalIndex = slideImages.findIndex(img => img.src === src);
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    function prevModalImage() {
+      currentModalIndex = (currentModalIndex - 1 + slideImages.length) % slideImages.length;
+      modalImg.src = slideImages[currentModalIndex].src;
+    }
+
+    function nextModalImage() {
+      currentModalIndex = (currentModalIndex + 1) % slideImages.length;
+      modalImg.src = slideImages[currentModalIndex].src;
+    }
+
+    slideImages.forEach((img) => {
+      img.addEventListener("click", () => openModal(img.src));
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  </script>
+
+  <script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.body.classList.add("loaded");
+    }, 400); 
+  });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

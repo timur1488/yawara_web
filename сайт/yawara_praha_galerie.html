@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YAWARA GALERIE</title>
+  <link rel="stylesheet" href="yawara_web.css" />
+</head>
+<body>
+
+  <div id="preloader">
+  <img src="yawara_prague_logo.png" alt="YAWARA Logo">
+  </div>
+
+  <!-- Hlavička -->
+  <header class="main-header">
+    <h1><a href="yawara_praha_aktuality.html">YAWARA JUDO PRAHA</a></h1>
+  </header>
+
+  <!-- Navigační menu -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="yawara_praha_aktuality.html">AKTUALITY</a></li>
+      <li class="divider"></li>
+      <li><a href="#">TRENÉRSKÝ TÝM</a></li>
+      <li class="divider"></li>
+      <li><a href="yawara_praha_galerie.html">GALERIE</a></li>
+      <li class="divider"></li>
+      <li><a href="yawara_bohemia_aktuality.html">YAWARA BOHEMIA</a></li>
+    </ul>
+
+    <div class="social-icon">
+      <a href="https://www.tiktok.com/@yawara_judo" target="_blank">
+        <img src="tik tok.png" alt="TikTok" />
+      </a>
+      <a href="https://www.instagram.com/yawarajudoclub" target="_blank">
+        <img src="instagram.png" alt="Instagram" />
+      </a>
+    </div>
+  </nav>
+
+  <!-- Galerie -->
+  <section class="gallery-section">
+    <h2 class="gallery-title">Fotogalerie</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="img_galerie1.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Soustředění v Japonsku</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie2.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Trénink v Kodokanu</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie3.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Poprvé v Tokiu</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie4.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Mezinárodní kemp ve Vídni</p>
+      </div>
+      <div class="gallery-item">
+        <img src="img_galerie5.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Holčičí tým na bruslení</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie6.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Mezinárodní turnaj v Bielsko Biale</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie7.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Lukáš Krpalek s zlatou olympijskou medaili na našem tréninku</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie8.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Zlatý pohár tymu kluků na závodech družstev ve Vršovicích</p>
+      </div>
+    
+      <div class="gallery-item">
+        <img src="img_galerie9.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Účastníky bojovky v parku na Lužinach</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie10.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Trenérské školení s gruzinským reprezentantom Lashou Shavdatuashvilii</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie11.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Letní sportovní tábor v Jesenícich</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie12.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Rozhovor v olympijskym šampionem na táboře</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie13.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Vítězní tým na závodech ve Varšavě</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie14.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Medajilistky European Hopes v Rize</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="img_galerie15.jpg" alt="123" onclick="openModal(this.src)" />
+        <p class="gallery-caption">Šampion v Báňské Bystřici a tým fanoušk</p>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Modal (Lightbox) -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image" />
+  </div>
+
+  <!-- Kontakty -->
+  <footer class="contact-section">
+  <h2>Kontakty</h2>
+
+  <div class="contact-content">
+    <div class="contact-item label-group">
+      <p class="label">Adresa:</p>
+      <div class="label-details">
+        <div>
+          <p>Sluneční náměstí 11, Praha 13 - Stodůlky</p>
+          <a href="https://www.google.com/maps/search/Sluneční+náměstí+11,+Praha" target="_blank">Zobrazit na Google Maps</a>
+        </div>
+        <div>
+          <p>ZŠ Kořenského, Praha 5 - Smíchov</p>
+          <a href="https://www.google.com/maps/search/ZŠ+Kořenského,+Praha" target="_blank">Zobrazit na Google Maps</a>
+        </div>
+        <div>
+          <p>Tělocvična v SK Viktorie Ořech, Zbuzanská 180, 252 25 Ořech</p>
+          <a href="https://www.google.com/maps/search/Zbuzanská+180,+252+25+Ořech" target="_blank">Zobrazit na Google Maps</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-item label-group">
+      <p class="label">Telefon:</p>
+      <div class="label-details">
+        <p>+420 608 443 806</p>
+      </div>
+    </div>
+
+    <div class="contact-item label-group">
+      <p class="label">Email:</p>
+      <div class="label-details">
+        <p><a href="mailto:gracovajudo@seznam.cz">gracovajudo@seznam.cz</a></p>
+      </div>
+    </div>
+
+    <div class="contact-item label-group">
+      <p class="label">Číslo účtu:</p>
+      <div class="label-details">
+        <p>2900708978 / 2010</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    function openModal(src) {
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modal-image");
+      modal.style.display = "flex";
+      modalImg.src = src;
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+
+  <script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.body.classList.add("loaded");
+    }, 600); 
+  });
+  </script>
+
+</body>
+</html>
+
